@@ -1,98 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221030 17:23:26.639" rpa="false" schemaversion="3">
-<suite id="s1" name="Compra Produto Test" source="D:\OneDrive\Área de Trabalho\AWDREY\ESTUDOS\automacao\desafios\desafio_2\compra_produto_test.robot">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221031 11:53:43.424" rpa="false" schemaversion="3">
+<suite id="s1" name="Compra Produto Test" source="D:\OneDrive\Área de Trabalho\AWDREY\ESTUDOS\automacao\desafios\desafio_2\compra-completa\compra_produto_test.robot">
 <test id="s1-t1" name="Cenário: Compra completa no site automationpractice.com" line="17">
 <kw name="Abrir Navegador e maximizar">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221030 17:23:26.891" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20221030 17:23:26.891" endtime="20221030 17:23:35.457"/>
+<msg timestamp="20221031 11:53:43.674" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20221031 11:53:43.673" endtime="20221031 11:53:51.373"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221030 17:23:35.457" endtime="20221030 17:23:35.587"/>
+<status status="PASS" starttime="20221031 11:53:51.373" endtime="20221031 11:53:51.499"/>
 </kw>
-<status status="PASS" starttime="20221030 17:23:26.891" endtime="20221030 17:23:35.588"/>
+<status status="PASS" starttime="20221031 11:53:43.673" endtime="20221031 11:53:51.499"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>link=${ITEM_COMPRA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:35.590" level="INFO">Clicking element 'link=Blouse'.</msg>
-<status status="PASS" starttime="20221030 17:23:35.589" endtime="20221030 17:23:37.953"/>
+<msg timestamp="20221031 11:53:51.501" level="INFO">Clicking element 'link=Blouse'.</msg>
+<status status="PASS" starttime="20221031 11:53:51.500" endtime="20221031 11:53:53.653"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name=Submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:37.956" level="INFO">Clicking button 'name=Submit'.</msg>
-<status status="PASS" starttime="20221030 17:23:37.954" endtime="20221030 17:23:38.048"/>
+<msg timestamp="20221031 11:53:53.654" level="INFO">Clicking button 'name=Submit'.</msg>
+<status status="PASS" starttime="20221031 11:53:53.654" endtime="20221031 11:53:53.765"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=layer_cart</arg>
+<arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221030 17:23:38.049" endtime="20221030 17:23:40.248"/>
+<status status="PASS" starttime="20221031 11:53:53.767" endtime="20221031 11:53:54.930"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@title="Proceed to checkout"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:40.250" level="INFO">Clicking element 'xpath=//a[@title="Proceed to checkout"]'.</msg>
-<status status="PASS" starttime="20221030 17:23:40.250" endtime="20221030 17:23:42.255"/>
+<msg timestamp="20221031 11:53:54.931" level="INFO">Clicking element 'xpath=//a[@title="Proceed to checkout"]'.</msg>
+<status status="PASS" starttime="20221031 11:53:54.931" endtime="20221031 11:53:56.611"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${ITEM_COMPRA}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20221030 17:23:42.257" endtime="20221030 17:23:42.282"/>
+<status status="PASS" starttime="20221031 11:53:56.612" endtime="20221031 11:53:56.632"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:42.284" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]'.</msg>
-<status status="PASS" starttime="20221030 17:23:42.283" endtime="20221030 17:23:44.502"/>
+<msg timestamp="20221031 11:53:56.634" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]'.</msg>
+<status status="PASS" starttime="20221031 11:53:56.633" endtime="20221031 11:53:59.897"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=email</arg>
 <arg>pakace4726@ilusale.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:44.503" level="INFO">Typing text 'pakace4726@ilusale.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20221030 17:23:44.502" endtime="20221030 17:23:44.653"/>
+<msg timestamp="20221031 11:53:59.899" level="INFO">Typing text 'pakace4726@ilusale.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20221031 11:53:59.898" endtime="20221031 11:54:00.059"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id=passwd</arg>
 <arg>robotframework</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:44.654" level="INFO">Typing password into text field 'id=passwd'.</msg>
-<msg timestamp="20221030 17:23:44.710" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221030 17:23:44.781" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221030 17:23:44.653" endtime="20221030 17:23:44.781"/>
+<msg timestamp="20221031 11:54:00.060" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<msg timestamp="20221031 11:54:00.114" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221031 11:54:00.175" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221031 11:54:00.060" endtime="20221031 11:54:00.175"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id=SubmitLogin</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:44.782" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
-<status status="PASS" starttime="20221030 17:23:44.782" endtime="20221030 17:23:47.741"/>
+<msg timestamp="20221031 11:54:00.177" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<status status="PASS" starttime="20221031 11:54:00.176" endtime="20221031 11:54:02.398"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221030 17:23:57.752" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20221030 17:23:47.743" endtime="20221030 17:23:57.752"/>
+<msg timestamp="20221031 11:54:12.411" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221031 11:54:02.399" endtime="20221031 11:54:12.411"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]</arg>
+<arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=0"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221030 17:23:57.753" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]'.</msg>
-<msg timestamp="20221030 17:23:58.379" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221030 17:23:58.380" level="FAIL">Element with locator 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]' not found.</msg>
-<status status="FAIL" starttime="20221030 17:23:57.753" endtime="20221030 17:23:58.382"/>
+<msg timestamp="20221031 11:54:12.414" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=0"]'.</msg>
+<status status="PASS" starttime="20221031 11:54:12.413" endtime="20221031 11:54:20.377"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath=//div[@class="checker"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20221031 11:54:20.379" level="INFO">Selecting checkbox 'xpath=//div[@class="checker"]'.</msg>
+<msg timestamp="20221031 11:54:20.952" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-62.png"&gt;&lt;img src="selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221031 11:54:20.953" level="FAIL">Checkbox with locator 'xpath=//div[@class="checker"]' not found.</msg>
+<status status="FAIL" starttime="20221031 11:54:20.378" endtime="20221031 11:54:20.955"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>name=processCarrier</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221031 11:54:20.956" endtime="20221031 11:54:20.956"/>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221030 17:23:58.383" endtime="20221030 17:24:00.544"/>
+<status status="PASS" starttime="20221031 11:54:20.957" endtime="20221031 11:54:23.141"/>
 </kw>
-<status status="FAIL" starttime="20221030 17:23:26.889" endtime="20221030 17:24:00.546">Element with locator 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]' not found.</status>
+<status status="FAIL" starttime="20221031 11:53:43.671" endtime="20221031 11:54:23.142">Checkbox with locator 'xpath=//div[@class="checker"]' not found.</status>
 </test>
-<status status="FAIL" starttime="20221030 17:23:26.641" endtime="20221030 17:24:00.550"/>
+<status status="FAIL" starttime="20221031 11:53:43.427" endtime="20221031 11:54:23.144"/>
 </suite>
 <statistics>
 <total>

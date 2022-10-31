@@ -31,7 +31,7 @@ Cenário: Compra completa no site automationpractice.com
 
     Click Element                    link=${ITEM_COMPRA}
     Click Button                     name=Submit
-    Wait Until Element Is Visible    id=layer_cart
+    Wait Until Element Is Visible    id=layer_cart  timeout=10s
     Click Element                    xpath=//a[@title="Proceed to checkout"]
     Wait Until Page Contains         ${ITEM_COMPRA}
     Click Element                    xpath=//a[@href="http://automationpractice.com/index.php?controller=order&step=1"] 
@@ -39,7 +39,11 @@ Cenário: Compra completa no site automationpractice.com
     Input Password    id=passwd    robotframework
     Click Button    id=SubmitLogin
     Sleep   10s
-    Click Element                    xpath=//a[@href="http://automationpractice.com/index.php?controller=order&step=1"]  
+    Click Element                    xpath=//a[@href="http://automationpractice.com/index.php?controller=order&step=0"]  
+    
+    
+
+
 
 
                       
