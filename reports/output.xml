@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221031 20:30:41.544" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20221031 20:33:20.248" rpa="false" schemaversion="3">
 <suite id="s1" name="Compra Produto Test" source="D:\OneDrive\Área de Trabalho\AWDREY\ESTUDOS\automacao\desafios\desafio_2\compra-completa\compra_produto_test.robot">
 <test id="s1-t1" name="Cenário: Compra completa no site automationpractice.com" line="17">
 <kw name="Abrir Navegador e maximizar">
@@ -7,115 +7,115 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221031 20:30:41.794" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20221031 20:30:41.793" endtime="20221031 20:30:50.298"/>
+<msg timestamp="20221031 20:33:20.521" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20221031 20:33:20.520" endtime="20221031 20:33:27.927"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221031 20:30:50.298" endtime="20221031 20:30:50.420"/>
+<status status="PASS" starttime="20221031 20:33:27.928" endtime="20221031 20:33:28.046"/>
 </kw>
-<status status="PASS" starttime="20221031 20:30:41.793" endtime="20221031 20:30:50.420"/>
+<status status="PASS" starttime="20221031 20:33:20.520" endtime="20221031 20:33:28.047"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>link=${ITEM_COMPRA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221031 20:30:50.422" level="INFO">Clicking element 'link=Blouse'.</msg>
-<status status="PASS" starttime="20221031 20:30:50.421" endtime="20221031 20:30:53.392"/>
+<msg timestamp="20221031 20:33:28.048" level="INFO">Clicking element 'link=Blouse'.</msg>
+<status status="PASS" starttime="20221031 20:33:28.047" endtime="20221031 20:33:31.114"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name=Submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221031 20:30:53.394" level="INFO">Clicking button 'name=Submit'.</msg>
-<status status="PASS" starttime="20221031 20:30:53.393" endtime="20221031 20:30:53.488"/>
+<msg timestamp="20221031 20:33:31.115" level="INFO">Clicking button 'name=Submit'.</msg>
+<status status="PASS" starttime="20221031 20:33:31.115" endtime="20221031 20:33:31.208"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=layer_cart</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221031 20:30:53.488" endtime="20221031 20:30:54.775"/>
+<status status="PASS" starttime="20221031 20:33:31.209" endtime="20221031 20:33:32.591"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@title="Proceed to checkout"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221031 20:30:54.777" level="INFO">Clicking element 'xpath=//a[@title="Proceed to checkout"]'.</msg>
-<status status="PASS" starttime="20221031 20:30:54.776" endtime="20221031 20:30:58.351"/>
+<msg timestamp="20221031 20:33:32.592" level="INFO">Clicking element 'xpath=//a[@title="Proceed to checkout"]'.</msg>
+<status status="PASS" starttime="20221031 20:33:32.591" endtime="20221031 20:33:33.942"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${ITEM_COMPRA}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20221031 20:30:58.351" endtime="20221031 20:30:58.373"/>
+<status status="PASS" starttime="20221031 20:33:33.942" endtime="20221031 20:33:33.968"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221031 20:30:58.375" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]'.</msg>
-<status status="PASS" starttime="20221031 20:30:58.374" endtime="20221031 20:31:02.460"/>
+<msg timestamp="20221031 20:33:33.969" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?controller=order&amp;step=1"]'.</msg>
+<status status="PASS" starttime="20221031 20:33:33.968" endtime="20221031 20:33:37.237"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=email</arg>
 <arg>pakace4726@ilusale.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:02.463" level="INFO">Typing text 'pakace4726@ilusale.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20221031 20:31:02.462" endtime="20221031 20:31:02.622"/>
+<msg timestamp="20221031 20:33:37.238" level="INFO">Typing text 'pakace4726@ilusale.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20221031 20:33:37.237" endtime="20221031 20:33:37.417"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id=passwd</arg>
 <arg>robotframework</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:02.623" level="INFO">Typing password into text field 'id=passwd'.</msg>
-<msg timestamp="20221031 20:31:02.672" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221031 20:31:02.747" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221031 20:31:02.622" endtime="20221031 20:31:02.747"/>
+<msg timestamp="20221031 20:33:37.419" level="INFO">Typing password into text field 'id=passwd'.</msg>
+<msg timestamp="20221031 20:33:37.504" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221031 20:33:37.609" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221031 20:33:37.418" endtime="20221031 20:33:37.609"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id=SubmitLogin</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:02.748" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
-<status status="PASS" starttime="20221031 20:31:02.747" endtime="20221031 20:31:05.204"/>
+<msg timestamp="20221031 20:33:37.610" level="INFO">Clicking button 'id=SubmitLogin'.</msg>
+<status status="PASS" starttime="20221031 20:33:37.610" endtime="20221031 20:33:41.838"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221031 20:31:15.219" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20221031 20:31:05.205" endtime="20221031 20:31:15.219"/>
+<msg timestamp="20221031 20:33:51.853" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221031 20:33:41.839" endtime="20221031 20:33:51.853"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name=processAddress</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:15.221" level="INFO">Clicking button 'name=processAddress'.</msg>
-<status status="PASS" starttime="20221031 20:31:15.220" endtime="20221031 20:31:18.011"/>
+<msg timestamp="20221031 20:33:51.854" level="INFO">Clicking button 'name=processAddress'.</msg>
+<status status="PASS" starttime="20221031 20:33:51.853" endtime="20221031 20:33:53.005"/>
 </kw>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>id=cgv</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:18.012" level="INFO">Selecting checkbox 'id=cgv'.</msg>
-<status status="PASS" starttime="20221031 20:31:18.011" endtime="20221031 20:31:18.153"/>
+<msg timestamp="20221031 20:33:53.006" level="INFO">Selecting checkbox 'id=cgv'.</msg>
+<status status="PASS" starttime="20221031 20:33:53.006" endtime="20221031 20:33:53.105"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>name=processCarrier</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:18.154" level="INFO">Clicking button 'name=processCarrier'.</msg>
-<status status="PASS" starttime="20221031 20:31:18.154" endtime="20221031 20:31:20.172"/>
+<msg timestamp="20221031 20:33:53.106" level="INFO">Clicking button 'name=processCarrier'.</msg>
+<status status="PASS" starttime="20221031 20:33:53.106" endtime="20221031 20:33:54.381"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@href="http://automationpractice.com/index.php?fc=module&amp;module=bankwire&amp;controller=payment"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:20.174" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?fc=module&amp;module=bankwire&amp;controller=payment"]'.</msg>
-<status status="PASS" starttime="20221031 20:31:20.173" endtime="20221031 20:31:25.050"/>
+<msg timestamp="20221031 20:33:54.382" level="INFO">Clicking element 'xpath=//a[@href="http://automationpractice.com/index.php?fc=module&amp;module=bankwire&amp;controller=payment"]'.</msg>
+<status status="PASS" starttime="20221031 20:33:54.382" endtime="20221031 20:33:55.515"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//button[@type="submit"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221031 20:31:25.051" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
-<status status="PASS" starttime="20221031 20:31:25.050" endtime="20221031 20:31:28.510"/>
+<msg timestamp="20221031 20:33:55.517" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20221031 20:33:55.516" endtime="20221031 20:33:57.364"/>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221031 20:31:28.511" endtime="20221031 20:31:30.750"/>
+<status status="PASS" starttime="20221031 20:33:57.365" endtime="20221031 20:33:59.517"/>
 </kw>
-<status status="PASS" starttime="20221031 20:30:41.791" endtime="20221031 20:31:30.752"/>
+<status status="PASS" starttime="20221031 20:33:20.518" endtime="20221031 20:33:59.518"/>
 </test>
-<status status="PASS" starttime="20221031 20:30:41.546" endtime="20221031 20:31:30.758"/>
+<status status="PASS" starttime="20221031 20:33:20.251" endtime="20221031 20:33:59.520"/>
 </suite>
 <statistics>
 <total>
