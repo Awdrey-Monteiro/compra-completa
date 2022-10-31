@@ -33,13 +33,29 @@ Cenário: Compra completa no site automationpractice.com
     Click Button                     name=Submit
     Wait Until Element Is Visible    id=layer_cart  timeout=10s
     Click Element                    xpath=//a[@title="Proceed to checkout"]
+    # Tela de compra
     Wait Until Page Contains         ${ITEM_COMPRA}
     Click Element                    xpath=//a[@href="http://automationpractice.com/index.php?controller=order&step=1"] 
-    Input Text  id=email    pakace4726@ilusale.com
-    Input Password    id=passwd    robotframework
-    Click Button    id=SubmitLogin
+    # Tela Login
+    Input Text          id=email    pakace4726@ilusale.com
+    Input Password      id=passwd    robotframework
+    Click Button        id=SubmitLogin
+    # Tela de confirmação de endereço de entrega
     Sleep   10s
-    Click Element                    xpath=//a[@href="http://automationpractice.com/index.php?controller=order&step=0"]  
+    Click Button    name=processAddress
+    # Tela de Entrega
+    Select Checkbox    id=cgv
+    Click Button   name=processCarrier
+    # Tela de Pagamento
+    Click Element   xpath=//a[@href="http://automationpractice.com/index.php?fc=module&module=bankwire&controller=payment"] 
+    Click Button    xpath=//button[@type="submit"] 
+    
+
+
+    
+    
+    
+
     
     
 
